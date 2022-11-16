@@ -10,6 +10,10 @@ let divChad = document.getElementsByClassName("modo_chad")[0]
 
 btnNo.addEventListener("mouseenter", function (e) { moverPosicionRandom(e.target) });
 
+btnNo.addEventListener("mouseenter", function (e) {
+    const sonido = new Audio("img/sound.mp4")
+    sonido.play();
+});
 btnSi.addEventListener("click", function (e) {
     alert("Sabia que eras CHAD")
 
